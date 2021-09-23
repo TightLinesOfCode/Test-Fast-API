@@ -18,7 +18,6 @@ COPY setup.py ./
 # Dev
 FROM base as develop
 COPY --from=base / /
-COPY start.dev.sh ./
 
 RUN pip3 install --no-cache-dir -e .
 
