@@ -5,7 +5,7 @@ services:
        context: ./
        dockerfile: Dockerfile
        target: develop
-     command: ["--host", "127.0.0.1", "api.main:app", "--reload"]
+     command: ["--host", "0.0.0.0", "api.main:app", "--reload"]
      environment:
        - LOG_LEVEL=debug
        - POLYGON_REPOSITORY_URL=https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2020-01-01/2020-12-31?adjusted=true&sort=asc&limit=120&apiKey=8YWgCP8lOZl3z4jFVy8sQSu2HQJnCLPn
