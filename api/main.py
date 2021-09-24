@@ -13,6 +13,10 @@ print(config.dict())
 def health():
     return{"status": "ok"}
 
+@app.get("/health2")
+def health():
+    return{"works here @ health2"}
+
 
 @app.on_event("startup")
 async def load_polygon_data():
