@@ -25,8 +25,8 @@ def account():
     return{"results": ALPACADATA[0]}
 
 @app.get("/BuyMarketAAPL")
-def account():
-    market_order_aapl()
+async def account():
+    await market_order_aapl()
     return{"results": ORDERDATA[0]}
 
 
