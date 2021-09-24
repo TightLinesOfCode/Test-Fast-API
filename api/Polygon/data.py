@@ -4,8 +4,7 @@ POLYGONDATA = {}
 
 
 def _load_polygondata(data: str):
-    polygon_data = data
-    print(polygon_data)
+    POLYGONDATA[0] = data
 
 
 async def get_polygon_data(path: str):

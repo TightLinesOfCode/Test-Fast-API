@@ -6,5 +6,4 @@ router = APIRouter()
 
 @router.get("")
 def list_data():
-    #return {"results": "need data"}
-    return {"results": POLYGONDATA.values()}
+    return {"results": POLYGONDATA[0]}
