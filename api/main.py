@@ -19,6 +19,8 @@ def health():
 
 @app.get("/Account")
 def account():
+    async def load_alpaca_data():
+        await get_alpaca_data()
     return{"results": ALPACADATA[0]}
 
 
@@ -28,5 +30,4 @@ async def load_polygon_data():
 
 
 # @app.on_event("startup")
-async def load_alpaca_data():
-    await get_alpaca_data()
+
