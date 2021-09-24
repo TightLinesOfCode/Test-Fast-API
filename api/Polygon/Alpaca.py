@@ -2,8 +2,9 @@ import httpx
 
 ALPACADATA = {}
 
+
 def _load_alpacadata(data: str):
-    ALPACADATA[0] = data
+    ALPACADATA[0] = "DATASUCKS" #data
 
 
 async def get_alpaca_data():
