@@ -21,9 +21,9 @@ async def market_order_aapl():
     async with httpx.AsyncClient() as client:
          url = 'https://paper-api.alpaca.markets/v2/orders'
          headers = {'APCA-API-KEY-ID': 'PKQO6B0V53BM8BRO3FHL', 'APCA-API-SECRET-KEY': '5Uwl32ELftgVw40RKnxpQvvu3dN6nprg4mI8nzkD'}
-         params = {'symbol': 'AMD', 'qty': 1, 'side': 'buy', 'type': 'market', 'time_in_force': 'gtc'}
-         response = await client.post(url, params=params, headers=headers)
-         print(params)
+         data = {'symbol': 'AAPL', 'qty': 1, 'side': 'buy', 'type': 'market', 'time_in_force': 'gtc'}
+         response = await client.post(url, headers=headers, data=data)
+         print(data)
          print(response)
          ORDERDATA[0] = response.json()
 
