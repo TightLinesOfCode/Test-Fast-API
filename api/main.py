@@ -26,6 +26,7 @@ def account():
 
 @app.get("/BuyMarketAAPL")
 def account():
+    market_order_aapl()
     return{"results": ORDERDATA[0]}
 
 
