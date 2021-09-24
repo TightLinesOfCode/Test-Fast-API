@@ -11,6 +11,8 @@ RUN apt-get update \
     build-essential python-dev \
     && rm -rf /var/lib/apt/lists/*
 
+ENV PYTHONPATH "${PYTHONPATH}:/home/john/.local/bin"
+
 WORKDIR /app
 COPY api ./api/
 COPY setup.py ./
