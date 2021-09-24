@@ -14,4 +14,4 @@ async def get_alpaca_data():
         response = await client.get(url, headers=headers)
 
         #response = "suckshere"
-        _load_alpacadata(response)
+        _load_alpacadata(response.json())
