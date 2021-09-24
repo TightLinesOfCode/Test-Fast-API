@@ -17,8 +17,10 @@ def health():
 def health():
     return{"works here @ health2"}
 
+@
+
 
 @app.on_event("startup")
 async def load_polygon_data():
-    #await get_polygon_data(config.polygon_test_url)
-    return(get_polygon_data(config.POLYGON_REPOSITORY_URL))
+    await get_polygon_data(config.polygon_test_url)
+
