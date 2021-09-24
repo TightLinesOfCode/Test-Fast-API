@@ -18,7 +18,7 @@ def health():
     return{"status": "ok"}
 
 @app.get("/Account")
-def health():
+def account():
     return{"results": ALPACADATA[0]}
 
 
