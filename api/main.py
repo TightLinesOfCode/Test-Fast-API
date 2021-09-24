@@ -5,18 +5,13 @@ from api.Polygon import views as polygon_views
 from api.Polygon.data import get_polygon_data
 
 app = FastAPI()
-app.include_router(polygon_views.router, prefix="/polygon")
+app.include_router(polygon_views.router, prefix="/Polygon")
 config = Config()
 print(config.dict())
 
 @app.get("/health")
 def health():
     return{"status": "ok"}
-
-
-@app.get("/health2")
-def health():
-    return{"works here @ health2"}
 
 
 @app.on_event("startup")
