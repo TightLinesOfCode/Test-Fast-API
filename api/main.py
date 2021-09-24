@@ -21,5 +21,5 @@ def health():
 
 @app.on_event("startup")
 async def load_polygon_data():
-    await get_polygon_data(config.polygon_test_url)
+    await get_polygon_data(config.POLYGON_REPOSITORY_URL)
 
