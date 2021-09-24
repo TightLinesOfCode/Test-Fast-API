@@ -8,7 +8,6 @@ from api.Polygon.Alpaca import get_alpaca_data
 
 app = FastAPI()
 app.include_router(polygon_views.router, prefix="/Polygon")
-app.include_router(polygon_views.router, prefix="/Account")
 config = Config()
 print(config.dict())
 
@@ -27,6 +26,6 @@ async def load_polygon_data():
     await get_polygon_data(config.POLYGON_REPOSITORY_URL)
 
 
-@app.on_event("startup")
-async def load_alpaca_data():
-    await get_alpaca_data()
+# @app.on_event("startup")
+# async def load_alpaca_data():
+#     await get_alpaca_data()
