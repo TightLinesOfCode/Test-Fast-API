@@ -2,7 +2,7 @@ from pydantic import BaseSettings
 
 
 class Config(BaseSettings):
-    POLYGON_REPOSITORY_URL: str
+    polygon_test_url: str
 
     class Config:
         case_sensitive = True
