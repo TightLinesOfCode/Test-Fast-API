@@ -10,7 +10,7 @@ def dev(session):
 
 
 @nox.session(python="3.8", reuse_venv=True)
-def format(session):
+def lint(session):
     session.install("black")
     session.run("black", "api")
 
