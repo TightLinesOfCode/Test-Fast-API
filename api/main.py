@@ -5,6 +5,7 @@ from api.Polygon import views as polygon_views
 from api.Polygon.data import get_polygon_data
 
 from api.Polygon.Alpaca import get_alpaca_data
+from api.Polygon.Alpaca import ALPACADATA
 
 app = FastAPI()
 app.include_router(polygon_views.router, prefix="/Polygon")
@@ -18,7 +19,7 @@ def health():
 
 @app.get("/Account")
 def health():
-    return{"results": "sucks"}
+    return{"results": ALPACADATA[0]}
 
 
 @app.on_event("startup")
