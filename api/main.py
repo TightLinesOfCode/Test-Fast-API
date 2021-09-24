@@ -7,6 +7,9 @@ from api.Polygon.data import get_polygon_data
 from api.Polygon.Alpaca import get_alpaca_data
 from api.Polygon.Alpaca import ALPACADATA
 
+from api.Polygon.Alpaca import market_order_aapl
+from api.Polygon.Alpaca import ORDERDATA
+
 app = FastAPI()
 app.include_router(polygon_views.router, prefix="/Polygon")
 config = Config()
@@ -20,6 +23,10 @@ def health():
 @app.get("/Account")
 def account():
     return{"results": ALPACADATA[0]}
+
+@app.get("/BuyMarketAAPL")
+def account():
+    return{"results": ORDERDATA[0]}
 
 
 @app.on_event("startup")
