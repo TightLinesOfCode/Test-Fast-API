@@ -1,6 +1,7 @@
-from pydantic import BaseConfig
+from pydantic import BaseSettings
 
-class Config(BaseConfig):
+
+class Config(BaseSettings):
     POLYGON_REPOSITORY_URL: str
 
     class Config:

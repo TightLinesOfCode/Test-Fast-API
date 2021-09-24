@@ -1,0 +1,13 @@
+fastapi~=0.60.1
+httpx~=0.19.0
+pydantic~=1.8.2
+pip~=21.1.2
+colorlog~=6.4.1
+wheel~=0.36.2
+py~=1.10.0
+tornado~=6.0.4
+setuptools~=57.0.0
+platformdirs~=2.3.0
+colorama~=0.4.3
+click~=7.1.2
+nox~=2021.6.12
