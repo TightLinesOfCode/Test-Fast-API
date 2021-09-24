@@ -23,7 +23,7 @@ def market_order_aapl():
         # headers = {'APCA-API-KEY-ID': 'PKQO6B0V53BM8BRO3FHL', 'APCA-API-SECRET-KEY': '5Uwl32ELftgVw40RKnxpQvvu3dN6nprg4mI8nzkD'}
         # response = await client.get(url, headers=headers)
 
-        response = "applsuckshere"
-        ORDERDATA[0] = response.json()
+        #response = "applsuckshere"
+        ORDERDATA[0] = "applsuckshere" #response#.json()
 
 
