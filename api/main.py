@@ -17,6 +17,10 @@ print(config.dict())
 def health():
     return{"status": "ok"}
 
+@app.get("/Account")
+def health():
+    return{"results": "sucks"}
+
 
 @app.on_event("startup")
 async def load_polygon_data():
