@@ -9,10 +9,10 @@ def _load_polygondata(data: str):
 
 
 async def get_polygon_data(path: str):
-    #async with httpx.AsyncClient() as client:
-    #response = await client.get(path)
-    #_load_polygondata(response.json())
+    async with httpx.AsyncClient() as client:
+    response = await client.get(path)
+    _load_polygondata(response.json())
     #print(response.text)
 
-    _load_polygondata("works")
+    #_load_polygondata("works")
 
