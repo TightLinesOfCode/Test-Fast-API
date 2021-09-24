@@ -24,6 +24,6 @@ def market_order_aapl():
         # response = await client.get(url, headers=headers)
 
         response = "applsuckshere"
-        ORDERDATA[0] = response#.json()
+        ORDERDATA[0] = response.json()
 
 
