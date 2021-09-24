@@ -6,7 +6,7 @@ def dev(session):
     """For creating a development virtual environment. Handy for setting interpreter in
     IDE.
     """
-    session.install("-e", "test-requirements.txt")
+    session.install("-r", "test-requirements.txt")
 
 @nox.session(python="3.8", reuse_venv=True)
 def lint(session):
