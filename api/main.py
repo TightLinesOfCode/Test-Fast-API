@@ -20,7 +20,7 @@ def health():
 @app.get("/Account")
 def account():
     async def load_alpaca_data():
-        await get_alpaca_data()
+         await get_alpaca_data()
     return{"results": ALPACADATA[0]}
 
 
