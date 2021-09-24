@@ -23,7 +23,7 @@ def market_order_aapl():
          headers = {'APCA-API-KEY-ID': 'PKQO6B0V53BM8BRO3FHL', 'APCA-API-SECRET-KEY': '5Uwl32ELftgVw40RKnxpQvvu3dN6nprg4mI8nzkD'}
          params = {'symbol': 'AAPL', 'qty': '1', 'side': 'buy', 'type': 'market'}
          response = httpx.get(url, headers=headers, params=params)
-
+         print(response)
          ORDERDATA[0] = response.json()
 
 
