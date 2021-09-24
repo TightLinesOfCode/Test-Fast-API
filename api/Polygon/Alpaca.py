@@ -21,7 +21,7 @@ def market_order_aapl():
     #async with httpx.AsyncClient() as client:
          url = 'https://paper-api.alpaca.markets/v2/orders?symbol=AAPL&qty=1&side=buy&type=market'
          headers = {'APCA-API-KEY-ID': 'PKQO6B0V53BM8BRO3FHL', 'APCA-API-SECRET-KEY': '5Uwl32ELftgVw40RKnxpQvvu3dN6nprg4mI8nzkD'}
-         response = httpx.get(url, headers=headers)
+         response = httpx.put(url, headers=headers)
 
          ORDERDATA[0] = response.json()
 
