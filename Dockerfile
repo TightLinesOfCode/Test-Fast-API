@@ -1,6 +1,6 @@
 # Multi-stage build to reduce image size
 # See https://pythonspeed.com/articles/multi-stage-docker-python/
-FROM python:3.8.6-slim as py
+FROM python:3.8.5-slim as py
 
 # Base
 FROM py as base
