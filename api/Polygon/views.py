@@ -4,7 +4,7 @@ from api.Polygon.data import POLYGONDATA
 
 router = APIRouter()
 
-@router.get("/")
+@router.get("")
 def list_data():
-    return {"working polygon":"need data"}
+    return {"results": "need data"}
     #return {"results": list(POLYGONDATA.values())}
