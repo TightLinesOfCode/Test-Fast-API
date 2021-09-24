@@ -2,6 +2,7 @@
 
 POLYGONDATA = {}
 
+
 def _load_polygondata(data: str):
     polygon_data = data
     print(polygon_data)
