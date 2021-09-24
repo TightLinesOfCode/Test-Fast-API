@@ -26,6 +26,6 @@ async def load_polygon_data():
     await get_polygon_data(config.POLYGON_REPOSITORY_URL)
 
 
-@app.on_event("startup")
+# @app.on_event("startup")
 async def load_alpaca_data():
     await get_alpaca_data()
