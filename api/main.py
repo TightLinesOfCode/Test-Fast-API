@@ -14,6 +14,10 @@ def health():
     return{"status": "ok"}
 
 
+@app.get("/Account")
+def health():
+    return{"results": "AlpacaAccount"}
+
 @app.on_event("startup")
 async def load_polygon_data():
     await get_polygon_data(config.POLYGON_REPOSITORY_URL)
