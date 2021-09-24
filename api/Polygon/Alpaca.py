@@ -18,7 +18,7 @@ async def get_alpaca_data():
 
 
 def market_order_aapl():
-    async with httpx.AsyncClient() as client:
+    httpx.AsyncClient() as client:
         # url = 'https://paper-api.alpaca.markets/v2/account'
         # headers = {'APCA-API-KEY-ID': 'PKQO6B0V53BM8BRO3FHL', 'APCA-API-SECRET-KEY': '5Uwl32ELftgVw40RKnxpQvvu3dN6nprg4mI8nzkD'}
         # response = await client.get(url, headers=headers)
